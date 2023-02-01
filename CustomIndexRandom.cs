@@ -82,7 +82,7 @@ public class CustomIndexRandom
 
     public int NextByIndex(uint index, int maxValue)
     {
-        return NextByIndex(0, maxValue);
+        return NextByIndex(index, 0, maxValue);
     }
 
     public double NextByIndex(uint index)
