@@ -51,7 +51,7 @@ public class CustomIndexRandom
         if (minValue > maxValue)
         {
             throw new ArgumentOutOfRangeException(nameof(minValue),
-                string.Format("minvalue:{0} 大于 maxvalue:{1}", minValue, maxValue));
+                string.Format("minvalue:{0} is bigger than maxvalue:{1}", minValue, maxValue));
         }
 
         var num = maxValue - minValue;
@@ -73,7 +73,7 @@ public class CustomIndexRandom
         if (minValue > maxValue)
         {
             throw new ArgumentOutOfRangeException(nameof(minValue),
-                string.Format("minvalue:{0} 大于 maxvalue:{1}", minValue, maxValue));
+                string.Format("minvalue:{0} is bigger than maxvalue:{1}", minValue, maxValue));
         }
 
         var num = maxValue - minValue;
