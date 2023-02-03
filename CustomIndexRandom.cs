@@ -58,17 +58,17 @@ public class CustomIndexRandom
         return (int) (this.Sample() * num) + minValue;
     }
 
-    public int Next(int maxValue)
+    public int Next(int maxValue = int.MaxValue)
     {
         return Next(0, maxValue);
     }
 
-    public double Next()
+    public double NextDouble()
     {
         return Sample();
     }
 
-    public int NextByIndex(uint index, int minValue, int maxValue)
+    public int NextByIndex(uint pindex, int minValue, int maxValue)
     {
         if (minValue > maxValue)
         {
@@ -77,15 +77,15 @@ public class CustomIndexRandom
         }
 
         var num = maxValue - minValue;
-        return (int) (this.Sample(index) * num) + minValue;
+        return (int) (this.Sample(pindex) * num) + minValue;
     }
 
-    public int NextByIndex(uint index, int maxValue)
+    public int NextByIndex(uint pindex, int maxValue = int.MaxValue)
     {
-        return NextByIndex(index, 0, maxValue);
+        return NextByIndex(pindex, 0, maxValue);
     }
 
-    public double NextByIndex(uint index)
+    public double NextDoubleByIndex(uint index)
     {
         return Sample(index);
     }
