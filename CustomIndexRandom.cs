@@ -77,7 +77,7 @@ public class CustomIndexRandom
         }
 
         var num = maxValue - minValue;
-        return (int) (this.Sample() * num) + minValue;
+        return (int) (this.Sample(index) * num) + minValue;
     }
 
     public int NextByIndex(uint index, int maxValue)
